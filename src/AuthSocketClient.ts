@@ -1,5 +1,5 @@
 import { io as realIo, Socket as IoClientSocket, ManagerOptions, SocketOptions } from 'socket.io-client'
-import { RequestedCertificateSet, SessionManager, Peer, WalletInterface } from '@bsv/sdk'
+import { RequestedCertificateSet, SessionManager, Peer, WalletInterface, Utils } from '@bsv/sdk'
 import { SocketClientTransport } from './SocketClientTransport.js'
 
 /**
@@ -81,12 +81,12 @@ class AuthSocketClientImpl {
 
   private encodeEventPayload(eventName: string, data: any): number[] {
     const obj = { eventName, data }
-    return Array.from(Buffer.from(JSON.stringify(obj), 'utf8'))
+    return Utils.toArray(JSON.stringify(obj), 'utf8')
   }
 
   private decodeEventPayload(payload: number[]): { eventName: string, data: any } {
     try {
-      const str = Buffer.from(payload).toString('utf8')
+      const str = Utils.toUTF8(payload)
       return JSON.parse(str)
     } catch {
       return { eventName: '_unknown', data: undefined }
