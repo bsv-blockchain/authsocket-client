@@ -1,0 +1,46 @@
+{
+  "name": "@bsv/authsocket-client",
+  "version": "1.0.4",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Mutually Authenticated Web Sockets Client",
+  "type": "module",
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "LICENSE.txt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitcoin-sv/authsocket-client.git"
+  },
+  "keywords": [
+    "BSV",
+    "Blockchain",
+    "Authentication",
+    "Websockets",
+    "Sockets"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "author": "BSV Blockchain Association",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/bitcoin-sv/authsocket-client/issues"
+  },
+  "homepage": "https://github.com/bitcoin-sv/authsocket-client#readme",
+  "dependencies": {
+    "@bsv/sdk": "^1.4.2",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
