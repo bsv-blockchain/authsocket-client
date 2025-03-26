@@ -52,7 +52,7 @@
   },
   "homepage": "https://github.com/bitcoin-sv/authsocket-client#readme",
   "dependencies": {
-    "@bsv/sdk": "^1.4.2",
+    "@bsv/sdk": "^1.4.11",
     "socket.io-client": "^4.8.1"
   },
   "devDependencies": {
