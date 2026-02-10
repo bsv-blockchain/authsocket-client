@@ -1,6 +1,6 @@
 {
   "name": "@bsv/authsocket-client",
-  "version": "1.0.13",
+  "version": "2.0.0",
   "publishConfig": {
     "access": "public"
   },
