@@ -1,5 +1,9 @@
 # AuthSocket (client-side)
 
+> **⚠️ This repository is being archived.**
+>
+> Development has moved to the [ts-stack monorepo](https://github.com/bsv-blockchain/ts-stack/tree/main/packages/messaging/authsocket-client). Open issues will be migrated there. This repository will be archived in the coming days — please open new issues and PRs in the monorepo going forward.
+
 ## Overview
 
 This repository provides a **drop-in client-side solution** for Socket.IO that **signs** all outbound messages and **verifies** inbound messages using [BRC-103](https://github.com/bitcoin-sv/BRCs/blob/master/peer-to-peer/0103.md). 
