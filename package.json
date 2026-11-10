@@ -10,9 +10,10 @@
   "module": "dist/esm/mod.js",
   "types": "dist/types/mod.d.ts",
   "files": [
+    "NOTICE",
     "dist",
     "src",
-    "LICENSE.txt"
+    "LICENSE"
   ],
   "exports": {
     ".": {
@@ -45,8 +46,8 @@
     "Websockets",
     "Sockets"
   ],
-  "author": "BSV Blockchain Association",
-  "license": "SEE LICENSE IN LICENSE.txt",
+  "author": "BSV Association",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/bsv-blockchain/authsocket-client/issues"
   },
